@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: brain_app
+    build: .
+    restart: "always"
+    volumes:
+      - "./test_model/:/usr/src/models/test_model"
+    ports:
+      - ${PORT}:8501
+    environment:
+      - MODEL_NAME=test_model
+      - MODEL_BASE_PATH=/usr/src/models
+      - PORT=8501
