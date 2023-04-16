@@ -1,7 +1,7 @@
 FROM tensorflow/serving:2.11.1-gpu AS build
 
 RUN mkdir -p /usr/src/models
-COPY ./brain_tumor_detection/ /usr/src/models/brain_tumor_detection
+COPY ./test_model/ /usr/src/models/test_model
 
 WORKDIR /usr/src/models
 
