@@ -1,4 +1,5 @@
 FROM hencor2019/brain_tumor_detection:v0.0.2
+FROM tensorflow/serving:2.11.1-gpu AS build
 
 ENV MODEL_BASE_PATH /models
 ENV MODEL_NAME brain_tumor_detection
