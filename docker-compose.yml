@@ -6,10 +6,10 @@ services:
     build: .
     restart: "always"
     volumes:
-      - "./test_model/:/usr/src/models/test_model"
+      - "./brain_tumor_detection/:/models/brain_tumor_detection"
     ports:
       - 8501:8501
     environment:
-      - MODEL_NAME=test_model
-      - MODEL_BASE_PATH=/usr/src/models
+      - MODEL_NAME=brain_tumor_detection
+      - MODEL_BASE_PATH=/models
       - PORT=8501
