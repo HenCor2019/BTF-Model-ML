@@ -3,7 +3,9 @@ version: "3.8"
 services:
   app:
     container_name: brain_app
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     restart: "always"
     volumes:
       - "./brain_tumor_detection/:/models/brain_tumor_detection"
