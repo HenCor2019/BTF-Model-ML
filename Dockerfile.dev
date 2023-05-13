@@ -1,4 +1,4 @@
-FROM tensorflow/serving
+FROM tensorflow/serving:latest-devel-gpu
 
 ENV MODEL_BASE_PATH /models
 ENV MODEL_NAME brain_tumor_detection
