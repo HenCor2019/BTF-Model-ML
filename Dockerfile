@@ -1,1 +1,1 @@
-FROM hencor2019/brain_tumor_detection:dev
+FROM hencor2019/brain_tumor_dectection:dev
